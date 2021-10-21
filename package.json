@@ -5,13 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "build-ts": "tsc scripts/index.ts --outfile 'js/build.js'",
     "watch-ts": "tsc --watch scripts/index.ts --outfile 'js/build.js'",
-
     "build-scss": "node-sass style/scss style.scss style.css -o style/scss/",
     "watch-scss": "node-sass --watch style/scss style.scss style.css -o style/scss/",
-
     "start": "npm run build-ts && npm run build-scss && nodemon app.js"
   },
   "author": "Matt Pickett",
