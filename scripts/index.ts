@@ -56,7 +56,7 @@ function appendTableRow(user : any) {
     // Create the table row element
     let rowElement = document.createElement("tr")
     rowElement.className = "table-data"
-    rowElement.id = "user-id-" + String(user.id) //User this as a way to store the user id
+    rowElement.id = "user-id-" + String(user.id) //Use this as a way to store the user id
     
     // Add onclick event handler to the table row:
     rowElement.onclick = function (event) {
